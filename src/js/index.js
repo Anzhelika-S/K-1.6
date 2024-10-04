@@ -1,3 +1,4 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+import swiper from './swiper.js'
+import servicesBlock from './services-block.js'

@@ -1,0 +1,48 @@
+.button--background-pink {
+  display: block;
+  padding: 10px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.button--call {
+  background-image: url('../img/call.svg');
+}
+.button--chat {
+  background-image: url('../img/chat.svg');
+}
+.button--profile {
+  background-image: url('../img/profile.svg');
+}
+
+.button--search {
+  background-image: url('../img/search.svg');
+}
+
+.button--burger {
+  background-image: url('../img/cross.svg');
+}
+
+.button--repair {
+  background-image: url('../img/repair.svg');
+}
+
+.button--check-status {
+  background-image: url('../img/check-status.svg');
+}
+
+.button--background-pink:focus,
+.button--background-pink:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
+.button_left {
+  margin-left: auto;
+}
