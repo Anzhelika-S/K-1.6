@@ -83,6 +83,89 @@
   background: #7e7e82;
 }
 
+// prices block
+
+.swiper-wrapper__table {
+}
+
+.swiper__headers {
+}
+
+.swiper__headers--hidden {
+  display: none;
+}
+
+.swiper__title {
+  color: #7e7e82;
+}
+
+.swiper__slide--services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  flex: 0 0 260px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 16px;
+
+  position: relative;
+  height: 200px;
+}
+
+.swiper__slide-title {
+  color: #7e7e82;
+}
+
+.swiper__slide-info {
+}
+
+.swiper__slide-button {
+  background-color: #ff3e79;
+  border-radius: 20px;
+  padding: 12px 5px;
+  width: 120px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+
+  cursor: pointer;
+}
+
+.services__info {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info__button {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+  text-align: start;
+  font-size: 16px;
+
+  margin-bottom: 40px;
+  padding-right: 16px;
+  position: relative;
+}
+
+.info__arrow {
+  border-right: 2px solid #ff3e79;
+  border-top: 2px solid #ff3e79;
+
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin-left: 10px;
+
+  transform: rotate(45deg);
+}
+
 @media (min-width: 768px) {
   .swiper-wrapper {
     display: grid;
@@ -109,6 +192,79 @@
   .swiper-pagination {
     display: none;
   }
+
+  // prices fix
+
+  .services__swiper--table {
+    height: auto;
+  }
+
+  .swiper-wrapper__table {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 0;
+  }
+
+  .swiper__headers {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 16px;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .swiper__headers--hidden {
+  }
+
+  .swiper__title {
+    color: #7e7e82;
+  }
+
+  .swiper__slide--services {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 64px;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 0 16px;
+    height: auto;
+    width: auto;
+
+    position: relative;
+
+    flex: auto;
+  }
+
+  .swiper__slide--services::after {
+    content: '';
+    width: 95%;
+    height: 1px;
+    background-color: #eaeaea;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  .swiper__slide-title {
+    display: none;
+  }
+
+  .swiper__slide-info {
+  }
+
+  .swiper__slide-button {
+    position: static;
+
+    height: 16px;
+  }
+
+  .services__info {
+    padding-left: 24px;
+    width: 500px;
+  }
 }
 
 @media (min-width: 1120px) {
@@ -117,9 +273,16 @@
   }
 
   .swiper-wrapper {
-    row-gap: 16px;
     column-gap: 32px;
 
     grid-template-columns: repeat(auto-fit, 240px);
+  }
+
+  .swiper__headers {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+  }
+
+  .swiper__slide--services {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
   }
 }

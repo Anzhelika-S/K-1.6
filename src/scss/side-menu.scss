@@ -5,7 +5,7 @@
   position: absolute;
   left: -400px;
   top: 0;
-  height: 100%;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   color: #1b1c21;
 }
 
-.header {
+.menu-header {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -30,6 +30,10 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.header__logo::after {
+  display: none;
 }
 
 .nav__item {
@@ -80,9 +84,6 @@
 
 .side-menu__footer {
   margin-top: auto;
-}
-
-.footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -143,5 +144,7 @@
 @media (min-width: 1120px) {
   .side-menu {
     left: 0;
+
+    box-shadow: none;
   }
 }
