@@ -1,0 +1,12 @@
+.devices {
+  height: 160px;
+  max-height: none;
+
+  &__slide {
+    height: 132px;
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,30 @@
+.slide-menu {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  column-gap: 20px;
+
+  scrollbar-width: none;
+  padding-left: 16px;
+  height: 44px;
+
+  &__link {
+    display: block;
+
+    color: #7e7e82;
+
+    white-space: nowrap;
+    padding: 8px 10px;
+
+    text-decoration: none;
+    color: #1b1c21;
+
+    :hover {
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px #b8ffec;
+      border-radius: 6px;
+
+      transition: box-shadow 0.3s ease;
+    }
+  }
+}

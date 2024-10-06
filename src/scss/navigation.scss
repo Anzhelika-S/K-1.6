@@ -1,0 +1,53 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__link {
+    display: block;
+
+    text-decoration: none;
+    color: #1b1c21;
+    font-weight: 500;
+
+    position: relative;
+    flex: 1 0 100%;
+
+    &::before {
+      content: '';
+      opacity: 0;
+    }
+
+    &:focus::before,
+    &:hover::before {
+      content: '';
+      width: 4px;
+      height: 32px;
+      background-color: #41f6d7;
+      border-radius: 25%;
+      left: -25px;
+      top: -5px;
+      display: block;
+      position: absolute;
+      opacity: 1;
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

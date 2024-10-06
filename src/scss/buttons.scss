@@ -1,52 +1,60 @@
-.button--background-pink {
-  display: block;
-  padding: 10px;
-  background-color: #ff3e79;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-position: center;
-  background-repeat: no-repeat;
+.button {
+  &--background-pink {
+    display: block;
+    padding: 10px;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  cursor: pointer;
-}
+    cursor: pointer;
 
-.button--call {
-  background-image: url('../img/call.svg');
-}
-.button--chat {
-  background-image: url('../img/chat.svg');
-}
-.button--profile {
-  background-image: url('../img/profile.svg');
-}
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-in-out 0.3s;
+    }
+  }
 
-.button--search {
-  background-image: url('../img/search.svg');
-}
+  &__call {
+    background-image: url('../img/call.svg');
+  }
+  &__chat {
+    background-image: url('../img/chat.svg');
+  }
+  &__profile {
+    background-image: url('../img/profile.svg');
+  }
 
-.button--burger {
-  background-image: url('../img/burger.svg');
-}
+  &__search {
+    background-image: url('../img/search.svg');
+  }
 
-.button--cross {
-  background-image: url('../img/cross.svg');
-}
+  &__burger {
+    background-image: url('../img/burger.svg');
+  }
 
-.button--repair {
-  background-image: url('../img/repair.svg');
-}
+  &__cross {
+    background-image: url('../img/cross.svg');
+  }
 
-.button--check-status {
-  background-image: url('../img/check-status.svg');
-}
+  &__repair {
+    background-image: url('../img/repair.svg');
+  }
 
-.button--background-pink:focus,
-.button--background-pink:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.3s;
-}
+  &__check-status {
+    background-image: url('../img/check-status.svg');
+  }
 
-.button_left {
-  margin-left: auto;
+  &--left {
+    margin-left: auto;
+  }
+
+  @media (min-width: 768px) {
+    &__arrows {
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }
