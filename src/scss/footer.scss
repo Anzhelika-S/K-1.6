@@ -1,25 +1,18 @@
 .footer {
-  color: #7e7e82;
+  color: $text-light;
   font-family: 'TT Lakes';
   font-size: 14px;
-  background-color: #f8f8f8;
+  background-color: $background;
 
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
+
   padding: 16px;
   text-align: center;
 
-  &::before {
-    content: '';
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    background-color: #d9fff5;
-    top: 0;
-    left: 0;
-  }
+  box-shadow: 0 0 0 1px $light-blue;
 
   @media (min-width: 768px) {
     display: grid;

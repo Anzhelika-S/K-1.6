@@ -22,14 +22,14 @@
   &__list-item {
     flex: 0 0 240px;
     max-height: 72px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $border-light;
     border-radius: 6px;
 
-    background-color: #ffffff;
+    background-color: $white;
 
     &:hover,
     &:focus {
-      box-shadow: 0 0 2px 2px #b8ffec;
+      box-shadow: 0 0 0 2px $light-blue;
       transition: box-shadow 0.3s ease;
     }
   }
@@ -51,7 +51,7 @@
 
   &__button {
     display: inline-block;
-    border: 2px solid #ff3e79;
+    border: 2px solid $pink;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -61,8 +61,8 @@
     &::before {
       content: '';
       position: absolute;
-      border-right: 2px solid #ff3e79;
-      border-top: 2px solid #ff3e79;
+      border-right: 2px solid $pink;
+      border-top: 2px solid $pink;
       height: 8px;
       width: 8px;
       top: 40%;
@@ -82,7 +82,7 @@
   }
 
   &__title {
-    color: #7e7e82;
+    color: $text-light;
   }
 
   &__slide--services {
@@ -91,7 +91,7 @@
     justify-content: space-between;
     gap: 16px;
     flex: 0 0 260px;
-    background-color: #ffffff;
+    background-color: $white;
     border-radius: 6px;
     padding: 16px;
 
@@ -118,7 +118,7 @@
     }
 
     &__title {
-      color: #7e7e82;
+      color: $text-light;
     }
 
     &__slide--services {
@@ -127,7 +127,7 @@
       grid-template-rows: 64px;
       align-items: center;
 
-      background-color: #ffffff;
+      background-color: $white;
       border-radius: 0px;
       padding: 0 16px;
       height: auto;
@@ -141,7 +141,7 @@
         content: '';
         width: 95%;
         height: 1px;
-        background-color: #eaeaea;
+        background-color: $border-light;
         position: absolute;
         bottom: 0;
         left: 16px;
@@ -162,16 +162,16 @@
 
 .swiper-slide {
   &__title {
-    color: #7e7e82;
+    color: $text-light;
   }
 
   &__button {
-    background-color: #ff3e79;
+    background-color: $pink;
     border-radius: 20px;
     padding: 12px 5px;
     width: 120px;
 
-    color: #ffffff;
+    color: $white;
     font-weight: 700;
     text-transform: uppercase;
 
@@ -220,7 +220,7 @@
   width: 12px;
   height: 12px;
 
-  background: #7e7e82;
+  background: $text-light;
 
   cursor: pointer;
 }

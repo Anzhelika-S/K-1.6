@@ -11,17 +11,17 @@
   &__link {
     display: block;
 
-    color: #7e7e82;
+    color: $text-light;
 
     white-space: nowrap;
     padding: 8px 10px;
 
     text-decoration: none;
-    color: #1b1c21;
+    color: $text;
 
-    :hover {
-      background-color: #ffffff;
-      box-shadow: 0 0 2px 2px #b8ffec;
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 0 2px 2px $light-blue;
       border-radius: 6px;
 
       transition: box-shadow 0.3s ease;

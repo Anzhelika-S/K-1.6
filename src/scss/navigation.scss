@@ -16,7 +16,7 @@
     display: block;
 
     text-decoration: none;
-    color: #1b1c21;
+    color: $text;
     font-weight: 500;
 
     position: relative;
@@ -32,7 +32,7 @@
       content: '';
       width: 4px;
       height: 32px;
-      background-color: #41f6d7;
+      background-color: $blue;
       border-radius: 25%;
       left: -25px;
       top: -5px;

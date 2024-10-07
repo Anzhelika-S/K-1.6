@@ -364,10 +364,11 @@
           </div>
         </section>
       </main>
+      <div class="side-menu__shade"></div>
       <aside class="side-menu">
         <header class="side-menu__header menu-header">
-          <button class="button button--reset">
-            <span class="button__burger button--background-pink"></span>
+          <button class="menu-header__button button button--reset">
+            <span class="button__cross button--background-pink"></span>
           </button>
           <a class="logo"><img src="../img/logo.svg" alt="CPS Logo" /></a>
           <button class="button button--left button--reset">
@@ -436,6 +437,103 @@
             >
           </ul>
         </footer>
+      </aside>
+      <aside class="modal-feedback modal">
+        <button class="modal__button button--reset"
+          ><span class="button__cross button--background-pink"></span
+        ></button>
+        <form action="" method="post" class="form">
+          <h2 class="form__title main__title">Обратная связь</h2>
+          <ul class="form__inputs list--reset">
+            <li class="form__input"
+              ><input
+                type="text"
+                id="name"
+                name="username"
+                placeholder="Имя"
+                required
+            /></li>
+            <li class="form__input"
+              ><input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Телефон"
+                pattern="[0-9]{11}"
+                required
+            /></li>
+            <li class="form__input"
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Электронная почта"
+                required
+            /></li>
+            <li class="form__input">
+              <textarea
+                name="form-message"
+                id="form-message"
+                rows="5"
+                placeholder="Сообщение"
+                class="form__message"
+                required
+              ></textarea>
+            </li>
+            <li class="form__input">
+              <span class="form__text"
+                >Нажимая “отправить”, вы даете согласие на
+                <a class="form__link form__link--highlight"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a class="form__link form__link--highlight"
+                  >политикой конфиденциальности</a
+                ></span
+              >
+            </li>
+          </ul>
+          <button type="submit" class="form__button button--reset">
+            <span>Отправить</span>
+            <img src="./img/dropdown.svg"
+          /></button>
+        </form>
+      </aside>
+      <div class="modal__shade"></div>
+      <aside class="modal-call modal">
+        <button class="modal__button button--reset"
+          ><span class="button__cross button--background-pink"></span
+        ></button>
+        <form action="" method="post" class="form">
+          <h2 class="form__title main__title">Заказать звонок</h2>
+          <ul class="form__inputs list--reset">
+            <li class="form__input"
+              ><input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Телефон"
+                pattern="[0-9]{11}"
+                required
+            /></li>
+            <li class="form__input">
+              <span class="form__text"
+                >Нажимая “отправить”, вы даете согласие на
+                <a class="form__link form__link--highlight"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a class="form__link form__link--highlight"
+                  >политикой конфиденциальности</a
+                ></span
+              >
+            </li>
+          </ul>
+          <button type="submit" class="form__button button--reset">
+            <span>Отправить</span>
+            <img src="./img/dropdown.svg"
+          /></button>
+        </form>
       </aside>
       <footer class="footer">
         <span

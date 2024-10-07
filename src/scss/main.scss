@@ -7,9 +7,13 @@
 
   font-family: 'TT Lakes';
   font-size: 16px;
-  color: #1b1c21;
+  color: $text;
 
-  background-color: #f8f8f8;
+  background-color: $background;
+
+  // &--fixed {
+  //   position: fixed;
+  // }
 
   &__title-container {
     display: flex;
@@ -30,11 +34,11 @@
 
     margin: 0;
 
-    :before {
+    &:before {
       content: '';
       width: 4px;
       height: 40px;
-      background-color: #41f6d7;
+      background-color: $blue;
       border-radius: 25%;
       left: 0px;
       top: -3px;
@@ -61,7 +65,7 @@
 
     font-family: 'TT Lakes';
     font-weight: 500;
-    color: #1b1c21;
+    color: $text;
     font-size: 14px;
 
     margin-top: 16px;
@@ -130,7 +134,7 @@
       margin-right: 16px;
 
       font-family: 'TT Lakes';
-      color: #1b1c21;
+      color: $text;
       font-weight: 500;
       font-size: 16px;
     }
@@ -179,20 +183,30 @@
     max-height: 160px;
     padding-right: 0;
     line-height: 20px;
+
+    &--show {
+      max-height: 250px;
+    }
   }
 
   @media (min-width: 1120px) {
     padding-left: 32px;
 
     max-height: 490px;
+
+    &--show {
+      max-height: 600px;
+    }
   }
 }
 
-@media (min-width: 1120px) {
-  .main-container {
+.main-container {
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 1120px) {
     max-width: 1440px;
-    position: relative;
     margin: 0 auto;
-    box-shadow: 0px 0px 0px 1000px #f8f8f8;
+    box-shadow: 0px 0px 0px 1000px $background;
   }
 }
