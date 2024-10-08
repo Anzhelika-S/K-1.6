@@ -98,11 +98,16 @@
 
       transition: all 0.3s ease-in-out;
 
-      height: 200px;
+      max-height: 200px;
+
+      &--show {
+        max-height: 550px;
+        transition: all 0.3s ease-in-out;
+      }
     }
 
     &__table {
-      height: auto;
+      max-height: fit-content;
     }
 
     &__info {
@@ -121,6 +126,11 @@
 
     &__swiper {
       padding: 24px 32px;
+
+      &--show {
+        max-height: 380px;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }

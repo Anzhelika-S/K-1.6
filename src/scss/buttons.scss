@@ -55,6 +55,11 @@
   @media (min-width: 768px) {
     &__arrows {
       transition: all 0.3s ease-in-out;
+
+      &--show {
+        transform: rotate(180deg);
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }

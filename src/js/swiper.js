@@ -28,8 +28,8 @@ export function swiperMode() {
       })
     }
   } else if (tablet.matches && init) {
-    swiper.destroy()
     init = false
+    // swiper.destroy()
   }
 }
 
